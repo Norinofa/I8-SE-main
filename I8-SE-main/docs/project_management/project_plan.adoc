@@ -1,0 +1,156 @@
+= Projektplan: {project-name}
+Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Einführung
+//Briefly describe the content of the project plan.
+
+In diesem Projektplan der "{project-name}" wird die Vorgehensweise und Organisation des Projekts protokolliert. Anhand des Open Unified Process wird das Projekt durch mehrere Iterationsschritte organisiert um bestmögliche Ergebnisse zu erzielen. Während des gesamten Projektes wird dieses Dokument stetig überarbeitet und der Erkenntnisse des Teams angepasst.
+
+
+== Projektorganisation
+//Introduce the project team, team members, and roles that they play during this project. If applicable, introduce work areas, domains, or technical work packages that are assigned to team members. Introduce neighboring projects, relationships, and communication channels. If the project is introduced somewhere else, reference that location with a link.
+
+In der folgenden Tabelle werden die Teammitglieder und deren Rollenverteilung dargestellt. Die Rollen wurden zum Teil doppelt verteilt. Die Rolle, die zuerst benannt wird, weist darauf hin, dass die Person die Hauptverantwortung in dieser Position trägt. Jedoch haben wir uns als Team darauf geeinigt, jeden Bereich zu unterstützen. 
+
+[%header, cols="1,1,1,1"]
+
+|===
+| Name | Rolle | Studiengang | Informationen zur Person 
+| Evelyn Dietrich 
+| Teamleiterin, Testerin 
+| Wirtschaftsinformatik 
+a|
+* SHK an der HTW Dresden
+* optimistisch
+| Kilian Luca Schinnerling 
+| Analyst, Teamleiter 
+| Wirtschaftsingenieurwesen 
+a|
+* selbstständig mit einem Einzelunternehmen
+* Perfektionist
+* Realist
+| Hieu Trung Thi 
+| Analyst, Tester
+| Wirtschaftsinformatik 
+a|
+* Effektiver  Student
+| Phil Benedikt Beck 
+| Entwurf 
+| Wirtschaftsinformatik 
+a|
+| Julius Wyrembek 
+| Tester, Entwurf 
+| Wirtschaftsinformatik 
+a|
+* organisiert
+* pünktlich
+
+| Viktoria Karklin 
+| Implementiererin 
+| Informatik 
+a|
+* Effiziente Studentin
+| Nuha Alhamiidi 
+| Implementiererin 
+| Wirtschaftsinformatik 
+a|                                     
+|===
+
+
+
+== Praktiken und Bewertung
+//Describe or reference which management and technical practices will be used in the project, such as iterative development, continuous integration, independent testing and list any changes or particular configuration to the project. Specify how you will track progress in each practice. As an example, for iterative development the team may decide to use iteration assessments and iteration burndown reports and collect metrics such as velocity (completed work item points/ iteration).
+
+Das Team orientiert sich durchgehend am Open Unified Process (OpenUP). OpenUP ist ein agiler, vollständiger Softwareentwicklungsprozess zum Erstellen eines Systems. Der OpenUP enthält vorgegebene Rollen, die wir von Anfang an, anhand von Stärken und Schwächen, aufgeteilt haben. Durch die zyklische Arbeitsweise, werden in jeder Iteration unterschiedliche Mirkoinkremente durch jedes einzelne Teammitglied erarbeitet, die dann im Laufe der nächsten Iteration aufeinander aufbauen und ein Gesamtbild erkennen lassen.
+
+Das komplette Projekt wird in Iterationsphasen eingeteilt. Dafür wird ein Treffen aller 2 Wochen festgelegt, entweder persönlich oder online. Die wesentlichen Inhalte dieser Meetings sind:
+
+* Haben wir unsere Iterationsziele geschafft? 
+* Falls nicht, was muss noch erledigt werden und bis wann? 
+* Welche Aufgaben müssen während der nächsten Iterationsphase erledigt werden?
+
+
+Die Aufgaben für die nächste Iteration werden nach den Meetings in unserem https://github.com/users/Norinofa/projects/1[GitHub Project] als Issues  hinzugefügt, die von jedem Mitglied selbstständig aktualisiert werden. Weiterhin findet man die zugewiesenen Aufgaben in dem jeweiligen Iterationsplan. Nach Ende der Iterationsphase werden die nicht erledigten Ziele in die neue Iterationsphase eingebunden.
+Anfangs wurde die gesamte Organisation über eine selbstgeschriebene Work-Items-List gemanaget. Jedoch hat sich diese als unpraktisch erwiesen, da die Teammitglieder ihre Arbeitschritte dort nicht vermerkt haben und generell kein analysierter Fortschritt zu erkennen war.
+In dem GitHub Project hingegen wird die ganze Organisation verwaltet. Dort haben wir Einsicht über neue Aufgaben, noch zuerledigende Aufgaben und den Prozessfortschritt, was die Organisation effektiver und übersichtlicher macht. 
+
+
+Unsere Kommunikation verläuft größtenteils über Discord. Dort können mehrere Chats themenorientiert eröffnen werden und dies bietet eine bessere Übersicht für die Teammitglieder über die zu erledigenden Anfoderungen. Jedoch nutzen wir für kurze Fragen und schnelle Antworten Whatsapp.
+
+.Überblick über unseren Discord-Server
+image::Überblick Discord Server.JPG[]
+
+Weiterhin halten wir unsere Gruppenmeetings meist online ab, da sich durch längere Fahrzeiten und unterschiedliche Stundenpläne die Terminfindung für Präsenzmeetings als schwierig erwiesen hat. Für die Onlinetreffen eignen sich die Sprachchats bei Discord. Die Bearbeitung der Dokumente wird überwiegend in Gruppen über Discord in den verschiedenen Sprachchats erledigt, weil man bequem seinen Bildschirm teilen kann und mehrere Meinungen abgedeckt werden können, um das bestmögliche Ergebnis zu erzielen.
+
+== Meilensteine und Ziele
+//Define and describe the high-level objectives for the iterations and define milestones. For example, use the following table to lay out the schedule. If needed you may group the iterations into phases and use a separate table for each phase
+
+[%header, cols="1,3a,2,1"]
+|===
+| Iteration
+| Primary objectives +
+(risks and use case scenarios)
+| Scheduled start or milestone
+| Target velocity
+
+| I1
+|
+* Kennenlernen der Gruppe 
+* Rollen verteilen/ mit Aufgaben vertraut machen
+* Ziele des Auftraggeber verstehen (Durchführen von mindestens einem Meeting)
+* Meeting mit Coach um erste Hinweise und Hilfestellungen zu erhalten
+* Vorgehensweise des OpenUP kennenlernen und erstmals anwenden
+* Einigung auf einen verlässlichen Kommunikationsweg
+| 17.11.22-28.11.22
+| 11
+
+| I2
+|
+* Use Cases ausarbeiten
+* Projektplan beginnen zu erstellen
+* Vision schreiben
+* in vorhandenen Code einarbeiten/ Docker verstehen
+* virtuelle Maschine beantragen
+* Architecure Notebook anfangen
+| 28.11.22-16.12.22
+| 19
+
+| I3
+|
+* SSL beantragen
+* Use Case Model/ Diagramm (ggf.) anpassen
+* Architecture Notebook aktualisieren
+* Projects in GitHub erstellen
+| 16.12.22-03.01.23
+|18
+
+| I4
+|
+<<#iteration_plan_04, Iterationsplan 04>>
+| 03.01.23-16.01.23
+|13
+| I5
+|
+<<#iteration_plan_05, Iterationsplan 05>>
+|16.01.23-27.01.23
+|11
+|===
+
+
+== Deployment
+//Outline the strategy for deploying the software (and its updates) into the production environment.
+Die bisherigen Fortschritte und Ergebnisse der Dokumente wurden mittels eines mitgebrachten Laptops über Visual Studio Code oder GitHub dem Auftraggeber präsentiert. Visualisierte Dateien wurden über Visual Paradigm vorgezeigt um gewünschte Änderungen ggf. direkt anpassen zu können.
+
+== Erkenntnisse (Lessons learned)
+//List lessons learned from the retrospective, with special emphasis on actions to be taken to improve, for example: the development environment, the process, or team collaboration.
+
+* Offene und ehrliche Kommunikation zwischen den Mitgliedern und ständiger Kontakt zu den Stakeholdern führt zu einer effizienten Zielerreichung.
+* Bearbeitung einzelner Aufgaben durch eine Gruppe von Teammitglieder führt zu einem qualitativ wertvollerem Ergebnis.
+* Sind die Stärken und Schwächen der Teammitglieder von vornherein bekannt, so klappt die Verteilung der Aufgaben besser.
+* Keine Frage ist zu viel - dabei spielt es keine Rolle an wen (die Gruppe, den Coach oder den Auftraggeber) die Frage gerichtet ist.
+* Iterative Vorgehensweise nach OpenUP ist extrem effektiv, muss jedoch zu Beginn des Projekts verstanden und konsequent über die gesamte Dauer angewandt werden.
+* Die Bearbeitung des Projektes direkt nach Erhalt der Aufgabenstellung anzufangen, war eine gute Entscheidung. Resultierend daraus konnte man dem zeitlichen Druck kurz vor der Abgabe entgehen und es waren ausreichend Ressourcen übrig um die Dokumente auf Sinnhaftigkeit, Vollständigkeit und Rechtschreibung zu überprüfen.

@@ -1,0 +1,10 @@
+= Domain Model: {project-name}
+Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+In diesem Diagramm ist das Domänenmodell für das Projekt {project-name} zu sehen. Es zeigt die wesentlichen fachlichen Gegenstände und Konzepte sowie ihre Eigenschaften und Zusammenhänge.
+
+.Domain Model Erstellung und Verwaltung von Gruppen für Software Engineering Projekte (zuletzt aktualisiert am 26.01.2022)
+image::Domain Model.JPG[]

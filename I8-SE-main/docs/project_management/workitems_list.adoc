@@ -1,0 +1,42 @@
+[%header, cols="1,1,1,1,1,1,1,1,1"]
+|===
+| Name/Beschreibung 
+| Priorität 
+| Größenschätzung (Punkte) 
+| Status 
+| Ziel Iteration
+| Zugewiesen an 
+| verbleibender Aufwand (in h) 
+| Arbeitsstunden 
+| zugewiesene Materialien 
+
+| Vision schreiben | 9 | 6 | in Arbeit | I3 | Kilian, Hieu | ... | 4 | vision.adoc 
+
+| mit Code vertraut machen | 1 | 10 | in Arbeit | I5 | Viktoria Nuha |  ... | 7(V) + 10 | s. Code/ Video
+
+| VM einrichten | 9 | 2 | fertig | I1 | Viktoria | 0 | 0.5 | Terminal
+
+| in Python/ Django einarbeiten | 1 | 10 | ... | I5 | Viktoria, Nuha | ... | ... | s. Code/ Video
+
+| Use Cases ausarbeiten | 9 | 7 | in Arbeit | I3 | Kilian, Hieu, Julius | ... | 4 | use-case_model.adoc 
+
+| Iterationsplan schreiben | 9 | 4 | in Arbeit | I2 | Evelyn | 1 | 2 | iterationsplan.adoc 
+
+| virtuelle Maschine beantragen | 9 | 1 | fertig | I2 | Evelyn | 0 | 0,25 | Outlook 
+
+| Projektplan anfangen | 7 | 7 | in Arbeit | I4 | Evelyn | 3 | 4 | projektplan.adoc
+
+| Architecture Notebook anfangen | 3 | 7 | in Arbeit | I4 | Phil, Julius | .. | 4 | architecture-notebook.adoc
+
+|SSL Zertifikat beantragen | 8 | 3 | ... | I3 | ... | 2 | 2 | Internet 
+
+| Termin mit Coach /Auftraggeber machen | 10 | 1 | I3 | I3 | Evelyn | 0 | 0,25 | Outlook 
+
+| SSL beantragen | 9 | 2 | ... | I3 | Evelyn | 0,5 | 0,5 | s. Link in Discord von Viktoria
+
+| Architecture NOtebook weiter bearbeiten | 7 | 7 | in Arbeit | I4 | Julius, Phil | 4 | 6 | architcture_notebook.adoc
+
+| Use Case Modell/ Diagramm ausarbeiten | 8 | 7 | ... | I3 | Kilian | 4 | 4 | 
+
+| Systemweite Anforderungen anfangen | 6 | 7 | ... | I3 | Hieu | 6 | 6 | 
+|===

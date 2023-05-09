@@ -1,0 +1,116 @@
+= Iteration Plan 04: {project-name}
+Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Meilensteine
+//Meilensteine zeigen den Ablauf der Iteration, wie z.B. den Beginn und das Ende, Zwischen-Meilensteine, Synchronisation mit anderen Teams, Demos usw.
+
+[%header, cols="3,1"]
+|===
+| Meilenstein | Datum
+
+| Beginn der Iteration | 03.01.23
+| Wireframes ausarbeiten | 04.01.23
+| Treffen mit Auftraggeber | 06.01.23
+| Vorstellung Prototyp | 16.01.23
+| Ende der Iteration | 16.01.23
+|===
+
+
+== Wesentliche Ziele
+
+. Erstellung des Prototypen 
+. Ausarbeitung der systemweiten Anforderungen
+. Ausarbeitung des Glossars
+. Ausarbeitung des Domänenmodells 
+. Fertigstellung des Use Case Models und der Use Cases mit Abnahme durch Auftraggeber
+. Vervollständigung des Architecture Notebooks 
+. Beginnen der Test Cases 
+
+
+== Aufgabenzuordnung
+//Dieser Abschnitt sollte einen Verweis auf die Work Items List enthalten, die die für diese Iteration vorgesehenen Aufgaben dokumentiert sowie die Zuordnung dieser Aufgaben zu Teammitgliedern. Alternativ können die Aufgaben für die Iteration und die Zuordnung zu Teammitgliedern in nachfolgender Tabelle dokumentiert werden - je nach dem, was einfacher für die Projektbeteiligten einfacher zu finden ist.
+
+Die in dieser Iteration geplanten/ fertiggestellten Aufgaben sind als Issues in unserem https://github.com/users/Norinofa/projects/1/views/13[GitHub Project] dargestellt.
+
+.Iteration 4 - GitHub Project (Issues)
+image::Projects Iteration 4.JPG[]
+
+== Probleme
+//Optional: Führen Sie alle Probleme auf, die in dieser Iteration adressiert werden sollen. Aktualisieren Sie den Status, wenn neue Probleme bei den täglichen / regelmäßigen Abstimmungen berichtet werden.
+
+[%header, cols="2,1,3a"]
+|===
+| Problem | Status | Notizen
+
+| Website funktioniert nicht 
+| rot 
+| 
+* Der Webserver wartet in einem Startskript vergeblich auf die Datenbank, was dazu führt, dass der Zugriff auf die Website nicht möglich ist. 
+* Intern wurde versucht das Problem zu beheben, jedoch vergeblich.
+* Die angeforderte externe Hilfe konnte auch keine Lösung finden. Jedoch wurde Hilfe von den Entwicklern des Codes angefordert. Dieser Prozess ist in Arbeit und die letzte Möglichkeit das Problem zu beheben.
+* Sollte dies nicht funktionieren, bleibt nur die Option eine Neuimplementierung auf Basis der vorgegebenen Website zu erstellen. Dies wurde dem Auftraggeber mitgeteilt und bewilligt.
+|===
+
+
+== Bewertungskriterien
+//Eine kurze Beschreibung, wie Erfüllung die o.g. Ziele bewertet werden sollen.
+
+
+* Wireframes, Use Case Model, Use Cases wurden vom Auftraggeber akzeptiert und als gut empfunden.
+* Glossar, Domänenmodell, Architecture Notebook wurden so ausgearbeitet, dass nur noch Feinheiten fehlen.
+* Eine Implementierung wurde vorgenommen und soweit ausgearbeitet, dass sie präsentiert werden kann.
+* Es soll eine Übersicht über die zu erstellenden Test Cases vorhanden sein.
+
+
+== Assessment
+//In diesem Abschnitt werden die Ergebnisse und Maßnahmen der Bewertung erfasst und kommuniziert. Die Bewertung wird üblicherweise am Ende jeder Iteration durchgeführt. Wenn Sie diese Bewertungen nicht machen, ist das Team möglicherweise nicht in der Lage, die eigene Arbeitsweise ("Way of Working") zu verbessern.
+
+[%header, cols="1,3"]
+|===
+| Assessment Ziel | Das kann die gesamte Iteration oder eine spezifische Komponente sein
+
+| Assessment Datum | 16.01.2023
+| Teilnehmer | Evelyn Dietrich, Kilian Schinnerling
+| Projektstatus	| gelb
+|===
+
+
+*Beurteilung im Vergleich zu den Zielen*
+
+* _Ziel 1_ wurde erreicht. Der Prototyp wurde erstellt und am 16.01.23 vorgestellt. 
+* _Ziel 2_ wurde erreicht. Die Systemweiten Anforderungen wurden beendet. 
+* _Ziel 3 und 4_ wurden nicht erreicht. 
+* _Ziel 5_ wurde erreicht. 
+* _Ziel 6_ wurde teilweise erreicht. Dem Auftraggeber wurden die Ergebnisse präsentiert, jedoch hatte dieser Änderungswünsche. 
+* _Ziel 7_ wurde nicht erreicht. 
+
+*Verschobene und hinzugefügte Aufgaben*
+
+* _Ziel 3 und 4:_ Das Domänenmodell und das Glosssar wurden zur Fertigstellung in die Iteration 05 verschoben.
+* _Ziel 7:_ Die Test Cases wurden verschoben, da erstmal die Verbsserungswünsche des Auftraggebers bezüglich der Use Cases in Angriff genommen wurden. Daher werden diese verschoben und in der Iteration 05 angefangen und zu Ende gebracht.
+//Zusammenfassung, ob alle für die Iteration geplanten Aufgaben bearbeitet wurden und welche Aufgaben verschoben oder hinzugefügt wurden.
+
+*Beurteilung im Vergleich zu den Bewertungskriterien*
+
+* _Ziel 1:_ Der Prototyp wurde in der Präsentation am 16.01.23 vorgestellt. Die Korrektheit des Prototypen an sich wurde umkommentiert gelassen, jedoch wurde die Neuimplementierung, statt der Weiterentwicklung, thematisiert. Es wurde klargestellt, dass die uns gegebene Website nicht funktioniert und daher auf die Notlösung zurückgegriffen wurde. 
+
+* _Ziel 3 und 4:_ Wurden nicht erreicht, da die Ausarbeitung nur zur 10% erfolgte. Sie wurden bisher nur sporadisch begonnen, da die Gruppe das Glossar vernachlässigt hat. 
+* _Ziel 6:_ Wireframes, Use Case Model und Use Cases wurden vom Auftraggeber als ausbaufähig wahrgenommen. Die Priorisierung des Use Cases 'Projekte verwalten' wurde im Meeting vom Auftraggeber als sehr hoch eingeschätzt und soll stärker vertieft werden.  Die Verbesserungswünsche wurden im restlichen Verlauf der Iteration 04 bestmöglich umgesetzt. Diese werden dem Auftraggeber in Iteration 05 präsentiert.
+
+
+//Document whether you met the evaluation criteria as specified in the Iteration Plan.
+//Geben Sie an, ob Sie die o.g. Bewertungskriterien erfüllt haben. Das kann z.B. folgende Informationen enthalten: “Demo for Department X was well-received, with some concerns raised around usability,” or “495 test cases were automated with a 98% pass rate. 9 test cases were deferred because the corresponding Work Items were postponed.”
+
+//Führen Sie weitere Themen auf, für die eine Bewertung durchgeführt wurde. Beispiele sind Finanzen, Zeitabweichungen oder Feedback von Stakeholdern, die nicht bereits an anderer Stelle dokumentiert wurden.
+
+
+== Essence Navigator
+
+Das Team hat folgenden Stand, gemessen anhand der Alpha States im Essence Navigator, in dieser Iteration erreicht.
+
+.Iteration 4 - Essence Navigator
+image::Essence4.PNG[]

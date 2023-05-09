@@ -1,0 +1,73 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+
+== Use-Case: UC01 User login
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+Der Use Case beschreibt den Login-Prozess eines Studierenden oder eines Dozenten mittels seiner HTWD-Logindaten.
+
+=== Kurzbeschreibung der Akteure
+
+==== Dozent
+Möchte sich einloggen um weitere Schritte vorzunehmen.
+
+==== Studierender
+Möchte sich einloggen um weitere Schritte vorzunehmen.
+
+=== Vorbedingungen
+//Vorbedingungen müssen erfüllt, damit der Use Case beginnen kann, z.B. Benutzer ist angemeldet, Warenkorb ist nicht leer...
+
+* User besitzt und kennt seine HTWD-Logindaten.
+* User ist nicht eingeloggt.
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn der User das Online-Tool aufruft.
+. Der User klickt auf das Anmeldesymbol.
+. Das System zeigt die Felder "s-Nummer" und "Passwort" für die Eingabe der Login-Daten an.
+. Der User gibt seine Login-Daten ein.
+. Der User klickt auf den "Anmelden"-Button.
+. Das System prüft die Login-Daten.
+. Das System bestätigt die übereinstimmeneden Login-Daten.
+. User ist eingeloggt und wird auf die entsprechende Website weitergeleitet.
+. Der Use Case ist abgeschlossen.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+==== HTWD-Logindaten sind ungültig
+* (6) Prüfung nicht erfolgreich
+. System teilt dem User mit, dass die Login-Daten inkorrekt sind und fordert ihn auf diese zu berichtigen.
+. User berichtigt seine HTWD-Logindaten.
+. Fortsetzen bei Schritt (5).
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern.
+
+--- nicht vorhanden ---
+
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+==== Erfolgreicher Login eines Studierenden
+Studierender X der HTWD ruft das Online-Tool auf und öffnet das Anmeldefenster. Er gibt seine Login-Daten ein und klickt auf den "Anmelden"-Button. Die Login-Daten sind korrekt, der Studierende X ist angemeldet und ihm wird der Fragebogen angezeigt.
+
+==== Erfolgreicher Login eines Dozenten
+Dozent X der HTWD ruft das Online-Tool auf und öffnet das Anmeldefenster. Er gibt seine Login-Daten ein und klickt auf den "Anmelden"-Button. Die Login-Daten sind korrekt, der Dozent X ist angemeldet und ihm wird die Landing Page für Dozenten angezeigt.
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+Der User ist eingeloggt und kann weitere Schritte auf der Website vornehmen.
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+==== Verbesserung der bisherigen Lösung
+Das bisherige System zeigt dem User den Fragebogen unabhängig vom Login-Zustand (Ob und aus welcher Sicht eingeloggt) bereits an. Dies gilt es zu eliminieren, sodass der erste Schritt immer ein Login ist und der User danach auf die ihm entsprechende Seite weitergeleitet wird.

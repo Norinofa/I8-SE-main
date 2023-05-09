@@ -1,0 +1,117 @@
+= System-Wide Requirements:  Projekt I8 | Erstellung und Verwaltung von Gruppen für Software Engineering Projekte 
+Vorname Nachname <email@domain.org>; Vorname2 Nachname2 <email2@domain.org>; Vorname3 Nachname3 <email3@domain.org>
+{localdatetime}
+include::../_includes/default-attributes.inc.adoc[]
+// Platzhalter für weitere Dokumenten-Attribute
+
+
+== Einführung
+In diesem Dokument werden die systemweiten Anforderungen für das Projekt Erstellung und Verwaltung von Gruppen für Software Engineering Projekte spezifiziert. Die Gliederung erfolgt nach der FURPS+ Anforderungsklassifikation:
+
+* Systemweite funktionale Anforderungen (F),
+* Qualitätsanforderungen für Benutzbarkeit, Zuverlässigkeit, Effizienz und Wartbarkeit (URPS) sowie
+* zusätzliche Anforderungen (+) für technische, rechtliche, organisatorische Randbedingungen
+
+NOTE: Die funktionalen Anforderungen, die sich aus der Interaktion von Nutzern mit dem System ergeben, sind als Use Cases in einem separaten Dokument festgehalten. [<<#use-case_model.adoc, Use Case Model>>]
+
+
+== Systemweite funktionale Anforderungen
+//Angabe von system-weiten funktionalen Anforderungen, die nicht als Use Cases ausgedrückt werden können. Beispiele sind Drucken, Berichte, Authentifizierung, Änderungsverfolgung (Auditing), zeitgesteuerte Aktivitäten (Scheduling), Sicherheit / Maßnahmen zum Datenschutz
+
+*SWFA-1:* Der Dozent soll die Möglichkeit haben manuell erstellte Backups aus einer Datenbank auf der Website neu zu laden. Zur Überprüfung soll selbst ein Backup erstellt und geladen werden können.
+
+*SWFA-2:* Projekte sollen eine ID zugeordnet bekommen, die konsequent auf der Website erkennbar ist.
+
+*SWFA-3:* Das System soll die Möglichkeit besitzen alle Daten der Projektthemen, Studierende, Antworten des Fragebogens, Teams, Einstellungen (Sichtbarkeiten), auch als Backup, zu löschen.
+
+*SWFA-4:* Die Website soll eine Fehlermeldung anzeigen, falls unvollständige oder inkonsistente Daten eingegeben werden.
+
+*SWFA-5:* Der Dozent soll bestimmen können, wieviele Projektgruppen zugeordnet werden sollen. Bei wenigen Projekten, werden den beliebtesten Projekten mehrere Teams zugeordnet und bei zu vielen Projekten sollen nur die Beliebtesten beachtet werden.
+
+== Qualitätsanforderungen für das Gesamtsystem
+//Qualitätsanforderungen repräsentieren das "URPS" im FURPS+ zu Klassifikation von Anforderungen
+
+=== Benutzbarkeit (Usability)
+//Beschreiben Sie Anforderungen für Eigenschaften wie einfache Bedienung, einfaches Erlernen, Standards für die Benutzerfreundlichkeit, Lokalisierung (landesspezifische Anpassungen von Sprache, Datumsformaten, Währungen usw.)
+
+*NFAU-1:* Die Benutzeroberfläche muss möglichst intuitiv, simpel, eindeutig und eine angemessene Gestaltung von Schrift und Farbe besitzen.
+
+*NFAU-1.1:* Das Design der Website sollte für den Studierenden möglichst intuitiv sein und gewünschte Interaktionen oder Inhalte sollen schnell zu finden sein.
+
+*NFAU-1.2:* Einfache Gestaltung der Layouts mit Weiterverlinkungen innerhalb der Website, damit eine einfache Navigation innerhalb der Website für den Benutzer gewährleistet wird.
+
+*NFAU-1.3:* Ein konsistentes Layout der Website und Begrifflichkeiten (Labels/ Begriffe) sollte gegeben sein. Angemessene Nutzung des textuellen Platzes, damit alle relevanten Informationen konzentriert sichtbar sind.
+
+*NFAU-2:* Gendergerechte Wortwahl um Misskommunikation zu verhindern.
+
+=== Zuverlässigkeit (Reliability)
+// Zuverlässigkeit beinhaltet die Fähigkeit des Produkts und/oder des Systems unter Stress und ungünstigen Bedingungen am laufen zu bleiben. Spezifizieren Sie Anforderungen für zuverlässige Akzeptanzstufen, und wie diese gemessen und evaluiert werden. Vorgeschlagene Themen sind Verfügbarkeit, Häufigkeit und Schwere von Fehlern und Wiederherstellbarkeit.
+
+*NFAR-1:* Das Website soll robust gegenüber Fehler und Abstürzen sein. Zur Überprüfung soll ein Simulieren vom Netzverkehr (Wireshark) durchgeführt werden.
+
+*NFAR-2:* Die Website soll sicher sein und den Zugang von unbefugten Nutzern schützen.
+
+*NFAR-2.1:* Die Website sollte nur die nötigsten Rechte für bestimmte Rollen vergeben um unbefugten Zugang in bestimmte Bereich zu vermeiden. Zur Überprüfung:
+* Passwort
+* Zugriffsrechte
+
+*NFAR-2.2:* Die Website sollte über eine sichere Verbindung verfügen
+
+=== Effizienz (Performance)
+// Die Performanz Charakteristiken des Systems sollten in diesem Bereich ausgeführt werden. Beispiele sind Antwortzeit, Durchsatz, Kapazität und Zeiten zum Starten oder Beenden.
+
+*NFAP-1:* Die Nutzbarkeit muss gewährleistet sein, für den unwahrscheinlichen Fall, dass beispielweise 10 Nutzer die Website gleichzeitig nutzen. Überprüft wird dies durch einen Stresstest mit 10 Nutzern.
+
+*NFAP-2:* Die Wechselzeit von verschiedenen Unterseiten sollte möglichst kurz sein.
+
+*NFAP-3:* Die Zeit für die Teamerstellung beim erweiterten Zuordnungsalgorithmus soll möglichst kurz gehalten werden. Zur Überprüfung soll der erweiterte Zuordnungsalgorithmus mit ähnlichen Testdaten und dem alten Zuordnungsalgorithmus verglichen werden.
+
+=== Wartbarkeit (Supportability)
+// Dieser Bereich beschreibt sämtliche Anforderungen welche die Supportfähigkeit oder Wartbarkeit des zu entwickelnden Systems verbessern, einschließlich Anpassungsfähigkeit und Erweiterbarkeit, Kompatibilität, Skalierbarkeit und Anforderungen bezüglich der System Installation sowie Maß an Support und Wartbarkeit.
+
+*NFAS-1:* Ausreichende Dokumentierung, um das Veröffentlichen/ Schließen der Website durch Dozenten zu garantieren. Zur Überprüfung wird ein Dozent gebeten ohne jegliche Hilfestellung, nur mit der gegebenen Dokumentation, die Website zu veröffentlichen und dann wieder offline zu stellen.
+
+*NFAS-2:* Die Website sollte mit verschiedenen Webbrowsern kompatibel sein:
+* Edge
+* Chrome
+* Firefox
+* Safari
+Zur Überprüfung muss die Website in allen Browsern mit der aktuellen Version, wenn
+nicht anders spezifiziert, getestet werden.
+
+== Zusätzliche Anforderungen
+
+=== Einschränkungen
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+// * Ressourcenbegrenzungen
+// * zu nutzende Komponenten / Bibliotheken / Frameworks
+// * Vorgaben für die Programmiersprache
+// * zu unterstützende Plattformen / Betriebssysteme
+// * Physische Begrenzungen für Hardware, auf der das System betrieben werden soll 
+
+* Die Verwaltung des Sourcecodes und der Dokumentation muss mittels GitHub erfolgen.
+
+* Folgende Programmiersprachen und Tools sind weiterhin vorgegeben:
+** Python mit Django
+** MySQL Datenbank
+** HTML, CSS und JavaScript (jquery)
+** Oberflächen-Frameworks
+** Docker Container
+//siehe PDF teamverwaltung
+
+=== Organisatorische Randbedingungen
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+// * Anforderungen an Betrieb, Management und Wartung der Anwendung
+// * zu beachtende Standards, Normen und Regeln
+
+* Die Website soll effektiv die Einsichtnahme von bestimmten Inhalten vor Unbefugten schützen.
+* Der Zugriff des Studierendenbereichs darf nur bei erfolgreicher und sicherer Identifizierung des Nutzers (z.B. über die s-Nummer) geschehen.
+* Der Zugriff geschieht bei erfolgreicher Identifizierung des jeweiligen Nutzers.
+
+=== Rechtliche Anforderungen
+//Angaben ergänzen, nicht relevante Unterpunkte streichen oder auskommentieren
+//* Lizensierung der Anwendung
+//* Datenschutz
+
+* Das System muss den Datenschutzanforderungen der HTW Dresden und der DSGVO entsprechen.
+* Die Verarbeitung der Daten darf nur entsprechend der sächsischen Hochschulpersonendatenverordnung erfolgen.

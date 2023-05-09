@@ -1,0 +1,74 @@
+//Nutzen Sie dieses Template als Grundlage für die Spezifikation *einzelner* Use-Cases. Diese lassen sich dann per Include in das Use-Case Model Dokument einbinden (siehe Beispiel dort).
+
+== Use-Case: UC08 Backup erstellen/ laden
+
+=== Kurzbeschreibung
+//<Kurze Beschreibung des Use Case>
+
+Der Use Case beschreibt den Prozess des Erstellens oder Ladens eines Backups durch einen Dozenten.
+
+=== Kurzbeschreibung der Akteure
+
+--- nicht vorhanden ---
+
+//==== <Akteur 1 Name>
+
+=== Vorbedingungen
+* Der Dozent ist mittels seiner HTWD-Logindaten angemeldet und hat sich auf die "Einstellungen" navigiert.
+* Im Fall, dass ein Backup geladen werden soll, muss ein in der Vergangenheit erstelltes Backup vorhanden sein.
+
+
+=== Standardablauf (Basic Flow)
+//Der Standardablauf definiert die Schritte für den Erfolgsfall ("Happy Path")
+
+. Der Use Case beginnt, wenn der Dozent sich in den Einstellungen befindet und das Backup Fenster öffnet
+. If Dozent wählt Backup erstellen und es öffnet sich ein Abfragefenster
+.. der Dozent akzeptiert die Sicherheitsabfrage
+.. Dozent wird gefragt auf welchem Medium es gespeichert werden soll
+.. Backupprozess wird gestartet
+.. Backupprozess ist abgeschlossen
+. Der Use Case ist abgeschlossen.
+
+. If der Dozent lehnt die Sicherheitsabfrage ab
+.. Vorgang wird abgebrochen
+.. Sicherheitsabfragefenster schließt sich
+.. Basic Flow befindet sich wieder auf Schritt 1.
+
+=== Alternative Abläufe
+//Nutzen Sie alternative Abläufe für Fehlerfälle, Ausnahmen und Erweiterungen zum Standardablauf
+
+--- nicht vorhanden ---
+
+//==== <Alternativer Ablauf 1>
+//Wenn <Akteur> im Schritt <x> des Standardablauf <etwas macht>, dann
+//. <Ablauf beschreiben>
+//. Der Use Case wird im Schritt <y> fortgesetzt.
+
+=== Unterabläufe (subflows)
+//Nutzen Sie Unterabläufe, um wiederkehrende Schritte auszulagern
+
+--- nicht vorhanden ---
+
+//==== <Unterablauf 1>
+//. <Unterablauf 1, Schritt 1>
+//. …
+//. <Unterablauf 1, Schritt n>
+
+=== Wesentliche Szenarios
+//Szenarios sind konkrete Instanzen eines Use Case, d.h. mit einem konkreten Akteur und einem konkreten Durchlauf der o.g. Flows. Szenarios können als Vorstufe für die Entwicklung von Flows und/oder zu deren Validierung verwendet werden.
+
+--- nicht vorhanden ---
+
+=== Nachbedingungen
+//Nachbedingungen beschreiben das Ergebnis des Use Case, z.B. einen bestimmten Systemzustand.
+
+--- nicht vorhanden ---
+
+//==== <Nachbedingung 1>
+
+=== Besondere Anforderungen
+//Besondere Anforderungen können sich auf nicht-funktionale Anforderungen wie z.B. einzuhaltende Standards, Qualitätsanforderungen oder Anforderungen an die Benutzeroberfläche beziehen.
+
+--- nicht vorhanden ---
+
+//==== <Besondere Anforderung 1>
